@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="css/hanoi.css">
+    <link rel="stylesheet" href="css/hn.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+</head>
+<body>
+    <style>
+        body{
+            font-family: 'Roboto',sans-serif;
+        }
+    </style>
+    <div class="class">
+        <header class="header">
+            <div class="grid">
+                <nav class="header_navbar">
+                    <ul class="header_navbar-list">
+                        <li class="header_navbar-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="header_navbar-contact">0327195539</div>
+                        </li>
+                        <li class="header_navbar-item">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div class="header_navbar-contact">Contact@gamil.com</div>
+                        </li>
+                    </ul>
+                    <ul class="header_navbar-list">
+                        <li  class="header_navbar-item">
+                            <a href="#" class="header_navbar-facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li  class="header_navbar-item ">
+                            <a href="#"class="header_navbar-instra">
+                                <i class="fa-brands fa-instagram"></i>                               
+                                    <span>Instragram</span>
+                            </a>
+                        </li>
+                        <li class="header_navbar-sepa"></li>
+                        <li class="header_navbar-item">
+                            <div class="header_navbar-login">
+                                <i class="fa-solid fa-lock"></i>
+                                <a href="#">Đăng Nhập</a>
+                            </div>
+                        </li>
+                        <li class="header_navbar-item">
+                            <div class="header_navbar-regis">
+                                <i class="fa-solid fa-user"></i>
+                                <a href="#">Đăng Ký</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="header_navbar-function">
+                    <ul class="header_navbar-item">
+                        <li class="header_navbar-item">
+                            <a href="http://127.0.0.1:5500/bt/bt.html" class="header_navbar-logo">
+                                <img src="detailed-travel-logo_23-2148627268.avif" class="logo-img">
+                                <span style="font-size: 2.4rem;">Travel Tour</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header_navbar-item header_navbar-item-funtion">
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#home" class="home " id="active">Trang Chủ</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home ">
+                            <a href="#region" class="home home-fun">Vùng Miền</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#destination " class="home home-fun">Địa Điểm</a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item-home">
+                            <a href="#booking" class="home ">Đặt Chỗ</a>
+                        </li>
+                        <div class="bottom"></div>
+                    </ul>
+                    <ul class="header_navbar-item header_navbar-search">
+                            <input type="text" class="header__search-input" placeholder="Tìm Kiếm">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                    </ul>
+
+
+                </nav>
+            </div>
+        </header>
+    
+        <div class="app-copntainer">
+            <div class="grid">
+                <h1>Địa Điểm</h1>
+                        <div class="home-filter">
+                            <div class="grid__row">
+                                <div class="grid__column-6 grid__column-6__item">
+                                    <div class="tour-item">
+                                        <img src="https://inkythuatso.com/uploads/thumbnails/800/2023/03/1-hinh-anh-lang-bac-ho-inkythuatso-04-11-23-13.jpg" class="tour-item__img-6">
+                                    </div>
+                                        <div class="tour-item-content ">
+                                            <h3 >Lăng Bác</h3>
+                                            <p >Lăng Bác, chính thức là Lăng Chủ tịch Hồ Chí Minh, tọa lạc tại quảng trường Ba Đình, Hà Nội. Được khởi công xây dựng vào năm 1973 và hoàn thành vào năm 1975, lăng là nơi an nghỉ của Chủ tịch Hồ Chí Minh, vị lãnh tụ vĩ đại của Việt Nam.
+
+                                                Lăng Bác là công trình kiến trúc hoành tráng, với mặt tiền rộng lớn và mái che hình bậc thang, thiết kế giản dị nhưng trang nghiêm, thể hiện lòng tôn kính sâu sắc của nhân dân Việt Nam đối với Bác Hồ. Bên trong lăng, thi hài của Chủ tịch Hồ Chí Minh được đặt trong một quan tài bằng kính, và người dân cũng như du khách có thể vào viếng, bày tỏ lòng thành kính.
+                                                
+                                                Lăng Bác không chỉ là nơi tưởng nhớ mà còn là biểu tượng của tinh thần dân tộc và sự đoàn kết của nhân dân Việt Nam.</p>
+
+          
+                                    </div>  
+                                    <div class="tour-item-content-booking">
+                                        <a href="#" class=" tour-item-content-re">
+                                        <button class="booking">
+                                            <span>Đặt Tour</span>
+                                        </button>
+                                        </a>
+                                    </div>    
+                                </div>
+                                
+                                <div class="grid__column-6 grid__column-6__item" >
+                                    <div class="tour-item">
+                                        <img src="https://www.bqllang.gov.vn/images/NAM_2022/THANG_9/12-9/quang_truong_ba_dinh_1.png" class="tour-item__img-6">
+                                    </div>
+                                    <div class="tour-item-content ">
+                                            <h3>Quảng Trường Ba Đình Lịch Sử</h3>
+                                            <p>Quảng trường Ba Đình nằm ở trung tâm thủ đô Hà Nội. Đây là nơi Chủ tịch Hồ Chí Minh đã đọc bản Tuyên ngôn Độc lập vào ngày 2 tháng 9 năm 1945, khai sinh ra nước Việt Nam Dân chủ Cộng hòa. Sự kiện này đánh dấu sự kết thúc của chế độ thực dân Pháp và mở ra một chương mới trong lịch sử dân tộc Việt Nam.
+
+                                                Quảng trường Ba Đình có diện tích khoảng 32.000 m², được bao quanh bởi nhiều công trình kiến trúc quan trọng như Lăng Chủ tịch Hồ Chí Minh, Phủ Chủ tịch, Bảo tàng Hồ Chí Minh, và chùa Một Cột. Quảng trường thường là nơi diễn ra các sự kiện chính trị, lễ kỷ niệm, và các hoạt động văn hóa lớn của đất nước.
+                                                
+                                                Trong ký ức của người Việt Nam, Quảng trường Ba Đình là biểu tượng của tinh thần yêu nước, của sự kiên cường và ý chí đấu tranh giành độc lập, tự do.</p>
+                                    </div>                                    
+                                </div>
+                                <div class="grid__column-6 grid__column-6__item" >
+                                    <div class="tour-item">
+                                        <img src="https://www.phattuvietnam.net/wp-content/uploads/2020/10/Banner-Ch%C3%B9a-M%E1%BB%99t-C%E1%BB%99t-One-Pillar-Pagoda.jpg" class="tour-item__img-6">
+                                    </div>
+                                    <div class="tour-item-content">
+                                            <h3>Chùa Một Cột</h3>
+                                            <p>Chùa Một Cột, xây dựng vào năm 1049 dưới triều vua Lý Thái Tông, là một biểu tượng nổi tiếng của Hà Nội. Ngôi chùa có kiến trúc độc đáo, được dựng trên một cột đá duy nhất giữa hồ nước, tạo hình giống như một đóa sen đang nở rộ. Với hình ảnh này, chùa tượng trưng cho sự thanh tịnh và giác ngộ trong Phật giáo.
+
+                                                Là một di tích lịch sử và văn hóa quan trọng, Chùa Một Cột không chỉ là nơi linh thiêng để người dân đến chiêm bái, mà còn thu hút nhiều du khách trong và ngoài nước đến tham quan và tìm hiểu về lịch sử, văn hóa của Việt Nam.</p>
+                                </div>                                    
+                                </div>
+                                <div class="grid__column-6 grid__column-6__item" >
+                                    <div class="tour-item">
+                                        <img src="https://nemtv.vn/wp-content/uploads/2019/01/anh-ho-guom-ha-noi-1.jpg"class="tour-item__img-6">
+                                    </div>
+                                    <div class="tour-item-content">
+                                            <h3>Hồ Gươm</h3>
+                                            <p>Hồ Gươm, còn gọi là Hồ Hoàn Kiếm, nằm ở trung tâm thủ đô Hà Nội, là một trong những danh thắng nổi tiếng và mang nhiều giá trị lịch sử, văn hóa của Việt Nam. Theo truyền thuyết, vào thế kỷ 15, vua Lê Lợi đã được Thần Kim Quy trao cho một thanh gươm thần để đánh đuổi quân xâm lược Minh. Sau khi giành được độc lập, vua trả lại gươm cho Thần Kim Quy tại hồ này, từ đó hồ được gọi là Hồ Gươm hay Hồ Hoàn Kiếm.<br>
+
+                                                Hồ Gươm không chỉ là một địa danh lịch sử, mà còn là một không gian xanh giữa lòng Hà Nội, nơi người dân và du khách có thể tận hưởng không khí trong lành và phong cảnh hữu tình. Bao quanh hồ là những công trình kiến trúc mang đậm dấu ấn văn hóa như Tháp Rùa, Đền Ngọc Sơn và cầu Thê Húc. Hồ Gươm là biểu tượng của Hà Nội, gắn liền với hình ảnh thủ đô nghìn năm văn hiến.</p>
+                                </div>                                    
+                                </div>
+
+                                <div class="grid__column-6 grid__column-6__item" >
+                                    <div class="tour-item">
+                                        <img src="https://statics.vinpearl.com/dia-diem-du-lich-ha-noi-5_1688468933.jpg"class="tour-item__img-6">
+                                    </div>
+                                    <div class="tour-item-content">
+                                            <h3>Hồ Tây</h3>
+                                            <p>Hồ Tây là hồ nước tự nhiên lớn nhất ở Hà Nội, nằm ở phía tây bắc của trung tâm thành phố. Với diện tích khoảng 500 ha và chu vi hơn 17 km, Hồ Tây không chỉ là một cảnh quan thiên nhiên tuyệt đẹp mà còn là một địa điểm gắn liền với nhiều truyền thuyết và sự kiện lịch sử của Hà Nội.
+
+                                                Hồ Tây có phong cảnh thơ mộng, bao quanh bởi nhiều di tích văn hóa, tâm linh như chùa Trấn Quốc, phủ Tây Hồ, và đền Quán Thánh. Đây cũng là nơi người dân và du khách thường đến để thư giãn, ngắm cảnh hoàng hôn, và tận hưởng không khí trong lành. Với vẻ đẹp yên bình và không gian thoáng đãng, Hồ Tây được coi là "lá phổi xanh" của thủ đô, mang đến sự tĩnh lặng giữa lòng Hà Nội náo nhiệt.</p>
+                                </div>                                    
+                                </div>
+
+                                <div class="grid__column-6 grid__column-6__item" >
+                                    <div class="tour-item">
+                                        <img src="	https://statics.vinpearl.com/dia-diem-du-lich-ha-noi-6_1688468916.jpg"class="tour-item__img-6">
+                                    </div>
+                                    <div class="tour-item-content">
+                                            <h3>Văn Miếu-Quốc Tử Giám</h3>
+                                            <p>Văn Miếu, hay Văn Miếu - Quốc Tử Giám, được coi là biểu tượng của nền giáo dục và tri thức Việt Nam. Được xây dựng vào năm 1070 dưới thời vua Lý Thánh Tông, ban đầu là nơi thờ Khổng Tử và các bậc hiền triết Nho giáo. Đến năm 1076, vua Lý Nhân Tông cho lập Quốc Tử Giám trong khuôn viên Văn Miếu, trở thành trường đại học đầu tiên của Việt Nam.
+
+                                                Văn Miếu có kiến trúc cổ kính với nhiều khu vực như Đại Trung Môn, Khuê Văn Các, Thái Học, và đặc biệt là 82 bia tiến sĩ, ghi danh những người đỗ đạt cao trong các kỳ thi Nho học qua nhiều triều đại. Đây là nơi lưu giữ và tôn vinh truyền thống hiếu học, là biểu tượng của trí tuệ và học vấn Việt Nam.
+                                                
+                                                Ngày nay, Văn Miếu - Quốc Tử Giám là một điểm đến hấp dẫn cho du khách và là nơi thường xuyên diễn ra các hoạt động văn hóa, giáo dục, đặc biệt là vào các dịp khai giảng và thi cử.</p>
+                                </div>                                    
+                                </div>
+
+                                <div class="grid__column-6 grid__column-6__item" >
+                                    <div class="tour-item">
+                                        <img src="https://statics.vinpearl.com/dia-diem-du-lich-ha-noi-7_1688468833.jpg"class="tour-item__img-6">
+                                    </div>
+                                    <div class="tour-item-content">
+                                            <h3>Hoàng Thành Thăng Long</h3>
+                                            <p>Hoàng thành Thăng Long là một quần thể di tích lịch sử quan trọng nằm ở trung tâm thủ đô Hà Nội. Được xây dựng từ thế kỷ 11 dưới thời vua Lý Thái Tổ, sau khi dời đô từ Hoa Lư về Thăng Long, Hoàng thành Thăng Long là trung tâm chính trị, văn hóa của các triều đại phong kiến Việt Nam trong suốt hơn một nghìn năm.
+
+                                                Khu di tích bao gồm nhiều công trình kiến trúc đặc biệt là Cột cờ Hà Nội. Nơi đây cũng đã phát hiện nhiều di vật quan trọng, từ những bức tường thành cổ, nền móng của các cung điện, đến các đồ gốm sứ từ nhiều thời kỳ khác nhau.
+                                                
+                                                Năm 2010, Hoàng thành Thăng Long được UNESCO công nhận là Di sản Văn hóa Thế giới, ghi nhận giá trị to lớn của nó trong lịch sử và văn hóa Việt Nam. Ngày nay, Hoàng thành Thăng Long không chỉ là nơi lưu giữ dấu ấn của các triều đại mà còn là điểm đến quan trọng để tìm hiểu về lịch sử thủ đô và đất nước.</p>
+                                </div>                                    
+                                </div>
+
+                                <div class="grid__column-6 grid__column-6__item" >
+                                    <div class="tour-item">
+                                        <img src="https://statics.vinpearl.com/dia-diem-du-lich-ha-noi-13_1688468758.jpg"class="tour-item__img-6">
+                                    </div>
+                                    <div class="tour-item-content">
+                                            <h3>Phố Cổ</h3>
+                                            <p>Phố Cổ Hà Nội là khu vực lịch sử nằm ở trung tâm thành phố, nổi bật với hệ thống phố xá và kiến trúc cổ kính. Được hình thành từ thế kỷ 11, khu phố này giữ gìn nét văn hóa và lịch sử lâu đời của thủ đô. Các con phố nhỏ hẹp thường được đặt tên theo nghề truyền thống, như phố Hàng Bạc, phố Hàng Mã.
+
+                                                Phố Cổ không chỉ nổi tiếng với các dãy nhà cổ và cửa hàng truyền thống mà còn với các món ăn đường phố đặc sắc như phở, bún chả. Khu vực này còn có nhiều di tích văn hóa quan trọng, như Đền Ngọc Sơn và Nhà Thờ Lớn Hà Nội. Phố Cổ là điểm đến hấp dẫn cho du khách và cũng là nơi sinh hoạt văn hóa sôi động của người dân địa phương.</p>
+                                </div>                                    
+                                </div>
+
+                                <div class="grid__column-6 grid__column-6__item" >
+                                    <div class="tour-item">
+                                        <img src="https://statics.vinpearl.com/dia-diem-du-lich-ha-noi-17_1688468663.jpg"class="tour-item__img-6">
+                                    </div>
+                                    <div class="tour-item-content">
+                                            <h3>Nhà Hát Lớn Hà Nội</h3>
+                                            <p>Nhà Hát Lớn Hà Nội, được xây dựng vào cuối thế kỷ 19, là một công trình kiến trúc mang đậm dấu ấn của phong cách Phục hưng Pháp. Được hoàn thành vào năm 1901, nhà hát này có thiết kế tương tự như các nhà hát lớn ở Paris, với mặt tiền đồ sộ và các chi tiết trang trí tinh xảo.
+
+                                                Nhà Hát Lớn không chỉ là biểu tượng của sự giao thoa văn hóa giữa Việt Nam và Pháp mà còn là trung tâm tổ chức các sự kiện văn hóa, nghệ thuật quan trọng của thủ đô. Nơi đây thường xuyên diễn ra các buổi biểu diễn âm nhạc, vũ đạo, và các sự kiện lễ hội lớn.
+                                                
+                                                Với vị trí nằm ngay trung tâm thành phố Hà Nội và kiến trúc ấn tượng, Nhà Hát Lớn là một điểm đến thu hút du khách và là niềm tự hào văn hóa của thủ đô.</p>
+
+                                </div>                                    
+                                </div>
+
+                                <div class="grid__column-6 grid__column-6__item" >
+                                    <div class="tour-item">
+                                        <img src="https://statics.vinpearl.com/dia-diem-du-lich-ha-noi-25_1688468495.jpg"class="tour-item__img-6">
+                                    </div>
+                                    <div class="tour-item-content">
+                                            <h3>Thành Cổ Loa</h3>
+                                            <p>Di tích Thành Cổ Loa, nằm tại xã Cổ Loa, huyện Đông Anh, Hà Nội, là một trong những di tích lịch sử quan trọng nhất của Việt Nam. Được xây dựng vào thế kỷ 3 trước Công Nguyên dưới triều đại vua An Dương Vương, Thành Cổ Loa là kinh đô đầu tiên của nước Âu Lạc.
+
+                                                Thành Cổ Loa nổi bật với cấu trúc ba vòng đai thành bao gồm thành trong, thành giữa và thành ngoài, với tổng chiều dài khoảng 8 km. Các vòng thành được xây dựng bằng đất và vẫn còn nhiều đoạn thành, cổng thành, và các di vật khảo cổ. Di tích này không chỉ là biểu tượng của kỹ thuật xây dựng cổ đại mà còn là minh chứng cho lịch sử và truyền thuyết của dân tộc, đặc biệt là truyền thuyết về vua An Dương Vương và cuộc kháng chiến chống quân xâm lược. Thành Cổ Loa là điểm đến hấp dẫn cho những ai muốn tìm hiểu về lịch sử và văn hóa Việt Nam.</p>
+                                            
+                                </div>                           
+                            </div>
+                        </div>
+                        </div>
+                        <h1>Ẩm Thực</h1>
+                        <section class="container">
+                            <div class="card__container swiper">
+                               <div class="card__content">
+                                  <div class="swiper-wrapper">
+                                     <article class="card__article swiper-slide">
+                                        <div class="card__image">
+                                           <img src="https://mia.vn/media/uploads/blog-du-lich/pho-10-ly-quoc-su-06-1701909870.jpeg" alt="image" class="card__img">
+                                        </div>
+                         
+                                        <div class="card__data">
+                                           <h3 class="card__name">Phở</h3>
+                                           <p class="card__description">
+                                            <i class="fa-solid fa-location-dot"></i>Phở Gánh - số 7 Chợ Gạo, Hoàn Kiếm<br>
+                                            <i class="fa-solid fa-location-dot"></i>Phở Thìn - 13 phố Lò Đúc<br>
+                                            <i class="fa-solid fa-location-dot"></i>Phở Lý Quốc Sư - Số 10 Lý Quốc Sư 
+                                           </p>
+                         
+                                        </div>
+                                     </article>
+                         
+                                     <article class="card__article swiper-slide">
+                                        <div class="card__image">
+                                           <img src="https://gcs.tripi.vn/public-tripi/tripi-feed/img/474693gub/thumb.jpeg" alt="image" class="card__img">
+                                        </div>
+                         
+                                        <div class="card__data">
+                                            <h3 class="card__name">Bún Riêu</h3>
+                                            <p class="card__description">
+                                             <i class="fa-solid fa-location-dot"></i>Bún riêu Nguyễn Siêu - 32 Nguyễn Siêu, Hoàn Kiếm<br>
+                                             <i class="fa-solid fa-location-dot"></i>Bún riêu Quang Trung - 2F phố Quang Trung<br>
+                                             <i class="fa-solid fa-location-dot"></i>Bún riêu phố cổ - 17 Hàng Cót
+                                            </p>
+                          
+                                         </div>
+                                     </article>
+                         
+                                     <article class="card__article swiper-slide">
+                                        <div class="card__image">
+                                           <img src="https://statics.vinpearl.com/banh-xeo-ngon-ha-noi-2_1685783472.jpg" alt="image" class="card__img">
+                                        </div>
+                         
+                                        <div class="card__data">
+                                            <h3 class="card__name">Bánh Xèo</h3>
+                                            <p class="card__description">
+                                             <i class="fa-solid fa-location-dot"></i>Bánh xèo Loan Béo - 153D Đội Cấn, Ba Đình<br>
+                                             <i class="fa-solid fa-location-dot"></i>Bánh xèo Tư Đông - 29P. Vũ Tông Phan, Thanh Xuân<br>
+                                             <i class="fa-solid fa-location-dot"></i>Bánh xèo Thanh Nga - 18 ngõ 56 Lê Văn Hiến, Bắc Từ Liêm 
+                                            </p>
+                          
+                                         </div>
+                                     </article>
+                         
+                                     <article class="card__article swiper-slide">
+                                        <div class="card__image">
+                                           <img src="	https://static.vinwonders.com/2022/10/banh-mi-hoi-an-02.jpg" alt="image" class="card__img">
+                                        </div>
+                         
+                                        <div class="card__data">
+                                            <h3 class="card__name">Bánh Mì</h3>
+                                            <p class="card__description">
+                                             <i class="fa-solid fa-location-dot"></i>Bánh mì Dân Tổ: ngã ba Cao Thắng và Trần Nhật Duật<br>
+                                             <i class="fa-solid fa-location-dot"></i>Bánh mì phố cổ - 38 Đinh Liệt, Hoàn Kiếm<br>
+                                             <i class="fa-solid fa-location-dot"></i>Bánh mì Phượng Hội An - 2B đường Phan Chu Trinh, phường Cẩm Châu, TP. Hội An, 
+                                            </p>
+                          
+                                         </div>
+                                     </article>
+                   
+                                     <article class="card__article swiper-slide">
+                                        <div class="card__image">
+                                           <img src="https://tophanoiaz.com/wp-content/uploads/2023/09/hinh-anh-bun-cha-ha-noi_19.jpg" alt="image" class="card__img">
+                                        </div>
+                         
+                                        <div class="card__data">
+                                            <h3 class="card__name">Bún chả</h3>
+                                            <p class="card__description">
+                                             <i class="fa-solid fa-location-dot"></i>Bún chả Hương Liên - Lê Văn Hưu - quán bún chả tổng thống Obama ghé ăn<br>
+                                             <i class="fa-solid fa-location-dot"></i>Bún chả Đắc Kim - số 1 Hàng Mành, Hàng Gai, Hoàn Kiếm<br>
+                                             <i class="fa-solid fa-location-dot"></i>Bún chả Sinh Từ - ở 57 Nguyễn Khuyến, Văn Miếu, Đống Đa 
+                                            </p>
+                          
+                                         </div>
+                                     </article>
+
+                                     <article class="card__article swiper-slide">
+                                        <div class="card__image">
+                                           <img src="https://cdn.tgdd.vn/2021/04/CookRecipe/Avatar/chao-suon-ha-noi-thumbnail.jpg" alt="image" class="card__img">
+                                        </div>
+                         
+                                        <div class="card__data">
+                                            <h3 class="card__name">Cháo sườn</h3>
+                                            <p class="card__description">
+                                             <i class="fa-solid fa-location-dot"></i>Cháo sườn - hàng Bồ<br>
+                                             <i class="fa-solid fa-location-dot"></i>Cháo sườn - ngõ Huyện<br>
+                                             <i class="fa-solid fa-location-dot"></i>Cháo sườn - ngõ chợ Đồng Xuân 
+                                            </p>
+                          
+                                         </div>
+                                     </article>
+
+                                     <article class="card__article swiper-slide">
+                                        <div class="card__image">
+                                           <img src="https://bepxua.vn/wp-content/uploads/2022/04/cach-nau-xoi-man.jpg" alt="image" class="card__img">
+                                        </div>
+                         
+                                        <div class="card__data">
+                                            <h3 class="card__name">Xôi</h3>
+                                            <p class="card__description">
+                                             <i class="fa-solid fa-location-dot"></i>Xôi Yến - quán xôi nổi tiếng nhất Hà Nội ở 35B Nguyễn Hữu Huân, Lý Thái Tổ, Hoàn Kiếm<br>
+                                             <i class="fa-solid fa-location-dot"></i>Xôi Trường Chinh - gần đoạn giao với Ngã Tư Sở<br>
+                                             <i class="fa-solid fa-location-dot"></i>Xôi Lộc - 105 Tạ Quang Bửu, Bạch Mai, Hai Bà Trưng, 
+                                            </p>
+                          
+                                         </div>
+                                     </article>
+
+                                     <article class="card__article swiper-slide">
+                                        <div class="card__image">
+                                           <img src="https://static.vinwonders.com/production/com-ha-noi-06.jpg" alt="image" class="card__img">
+                                        </div>
+                         
+                                        <div class="card__data">
+                                            <h3 class="card__name">Cốm</h3>
+                                            <p class="card__description">
+                                             <i class="fa-solid fa-location-dot"></i>Cốm Nguyên Ninh - số 11 Hàng Than<br>
+                                             <i class="fa-solid fa-location-dot"></i>Cốm mộc Lê Gia - số 2 ngõ 59 Mễ Trì<br>
+                                             <i class="fa-solid fa-location-dot"></i>Cốm làng Vòm bà Cận - số 19 ngõ 85 Xuân Thuỷ 
+                                            </p>
+                          
+                                         </div>
+                                     </article>
+
+                                     <article class="card__article swiper-slide">
+                                        <div class="card__image">
+                                           <img src="https://owa.bestprice.vn/images/articles/uploads/dan-ban-dia-mach-10-quan-che-ngon-o-hoi-an-ai-cung-nghien-5f47394555917.jpg" alt="image" class="card__img">
+                                        </div>
+                         
+                                        <div class="card__data">
+                                            <h3 class="card__name">Chè</h3>
+                                            <p class="card__description">
+                                             <i class="fa-solid fa-location-dot"></i>Chè Gỗ - 9 Trần Phú, Ba Đình<br>
+                                             <i class="fa-solid fa-location-dot"></i>Chè Xoan - 29 Hàng Giấy, Hoàn Kiếm<br>
+                                             <i class="fa-solid fa-location-dot"></i>Chè - số 492 Xã Đàn, Đống Đa 
+                                            </p>
+                          
+                                         </div>
+                                     </article>
+                                  </div>
+                               </div>
+                   
+                               <!-- Navigation buttons -->
+                               <div class="swiper-button-next">
+                                  <i class="ri-arrow-right-s-line"></i>
+                               </div>
+                               
+                               <div class="swiper-button-prev">
+                                  <i class="ri-arrow-left-s-line"></i>
+                               </div>
+                   
+                               <!-- Pagination -->
+                            </div>
+                         </section>                        
+            </div>
+        </div>
+    </div>
+     <!--=============== SWIPER JS ===============-->
+     <script src="js/swiper-bundle.min.js"></script>
+                   
+     <!--=============== MAIN JS ===============-->
+     <script src="js/scripts.js"></script>
+
+</body>
+</html>

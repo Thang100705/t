@@ -1,0 +1,204 @@
+.header_navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid #333 ;
+}
+.header_navbar-function{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    margin: 10px 20px;
+}
+
+.header_navbar-list{
+    display: flex;
+    padding: 6px 5px  8px 5px;
+}
+.header_navbar-item{
+    padding: 0 16px;
+}
+.header_navbar-item,
+.header_navbar-item-funtion{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    font-size: 1.6rem;
+}
+.header_navbar-contact{
+    margin-left:4px ;
+}
+
+.home:hover,#active{
+    cursor: pointer;
+    color: #333;
+    transition: .4s;
+}
+.home{
+    position: relative;
+    color: #898686;
+}
+.home-fun{
+    position: relative;
+}
+.home-fun::after{
+    position: absolute;
+    content:"";
+    width: 50px;
+    height: 30px;
+}
+.bottom{
+    position: absolute;
+    width: 86px;
+    height: 3px;
+    background-color: #898686;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.header_navbar-item-home:nth-child(2):hover ~ .bottom{
+    width: 90px;
+    left: 570px;
+}
+.header_navbar-item-home:nth-child(3):hover ~ .bottom{
+    width: 80px;
+    left: 715px;
+}
+.header_navbar-item-home:nth-child(4):hover ~ .bottom{
+    width: 75px;
+    left: 840px;
+}
+.header_navbar-sepa{
+    padding: auto;
+    border-right:1px solid #333 ;
+}
+.header_navbar-logo{
+    display: flex;
+    align-items: center;
+}
+.logo-img{
+    width: 120px;
+}
+.header_navbar-function a{
+    font-size: 2rem;
+}
+.header_navbar-search{
+    display: flex;
+    justify-content: end;
+}
+.header__search-input{
+    position: relative;
+    width: 42rem;
+    padding: 10px 10px;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+.fa-magnifying-glass{
+    text-align: center;
+    color: #6d6c6c;
+    position: absolute;
+    font-size: 1.6rem;
+    margin-right: 4px;
+    padding: 0 5px;
+    border-left: 1px dashed #5e5c5c;
+}
+.bodic{
+  background: url('https://statics.vinpearl.com/da-lat-ve-dem-1_1701780759.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  border: 1px solid #e2e6f2;
+}
+.wrap {
+  width: 420px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  padding: 30px 40px;
+}
+.wrap h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+}
+.wrap .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 20px 0;
+}
+.wrap-username,
+.wrap-password,
+.wrap-email{
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  padding: 20px 45px 20px 20px;
+  border: 2px solid rgba(230, 226, 226, 0.2);
+  border-radius: 40px;
+  color: #fff;
+  outline: none;
+  font-size: 1.4rem;
+}
+.input-box input::placeholder {
+  color: #fff;
+  font-weight: 500;
+}
+.input-box i {
+  color: #fff;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+}
+.wrap .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin: 0 15px 10px 15px;
+}
+.wrap .remember-forgot__register{
+  color: #fff;
+  margin: 0 10px 10px 10px;
+  font-size: 16px;
+}
+.remember-forgot label {
+  display: flex;
+  align-items: center;
+}
+.remember-forgot label input {
+  margin-right: 5px;
+}
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+.login-btn {
+  width: 100%;
+  height: 45px;
+  background: #111;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.login-btn:hover {
+  background-color: rgba(252, 252, 252, 0);
+}
+.register-link {
+  font-size: 15px;
+  text-align: center;
+  margin: 20px 0 15px 0;
+  color: #fff;
+}
+.register-link a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
